@@ -32,3 +32,13 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Build and commit
+      run: |
+        git config user.name "taka1985"
+        git config user.email "84taka.y@gmail.com"
+        git remote set-url origin https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git
+        git checkout master
+        pipenv run mainpy
+        git add dist
+        git commit -m "daily update"
+        git push origin master || true
