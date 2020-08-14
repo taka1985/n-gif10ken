@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dfb662c5b0881d898a310464afbc63747eaf8e9e5e40711c4099aad30a458431"
+            "sha256": "17b82d5c949c3d6c400c896356db0da10dc6e63029a255eb9fdad894579f740c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -38,6 +38,13 @@
                 "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
             ],
             "version": "==3.0.4"
+        },
+        "distro": {
+            "hashes": [
+                "sha256:0e58756ae38fbd8fc3020d54badb8eae17c5b9dcbed388b17bb55b8a5928df92",
+                "sha256:df74eed763e18d10d0da624258524ae80486432cd17392d9c3d96f5e83cd2799"
+            ],
+            "version": "==1.5.0"
         },
         "et-xmlfile": {
             "hashes": [
@@ -167,6 +174,14 @@
             ],
             "index": "pypi",
             "version": "==1.0.5"
+        },
+        "tabula-py": {
+            "hashes": [
+                "sha256:6fe6282ec0969ee3d21ee6bb25bb9a7204e63c2651d165060ad545ee98885680",
+                "sha256:d7fc7131113188a4becdbf02fa9c852240d08d46353b73fa0694b398cd4d9274"
+            ],
+            "index": "pypi",
+            "version": "==2.1.1"
         },
         "urllib3": {
             "hashes": [
