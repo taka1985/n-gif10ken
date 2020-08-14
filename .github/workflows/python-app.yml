@@ -38,7 +38,7 @@ jobs:
         git config user.email "84taka.y@gmail.com"
         git remote set-url origin https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git
         git checkout master
-        python mainpy.py
+        pipenv run main
         git add dist
         git commit -m "daily update"
         git push origin master || true
